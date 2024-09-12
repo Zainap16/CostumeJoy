@@ -78,8 +78,12 @@ nav > ul {
 nav > ul > li {
   font-size: 1.5em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-top:2px solid #e89c8b;
 }
-
+nav > ul > li:nth-last-of-type(4) {
+    border-top: none;
+  }
+  
 nav li a {
   text-decoration: none;
   color: black;
@@ -183,6 +187,32 @@ footer p a {
   .mobile-user > ul > li {
     background-color: var(--mainbg); /* White background */
   }
+
+  /* Styling for individual form groups */
+.form-group {
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+    margin-bottom: 15px; /* Space between form fields */
+    width: 100%; /* Take up full width of form container */
+}
+
+/* Center the labels and inputs */
+.form-group label {
+    font-weight: bold;
+    text-align: center; /* Center label text */
+    margin-bottom: 5%;
+    color: #333;
+}
+
+.form-group input {
+    padding: 10%;
+    width: 100%; /* Ensure input takes full width */
+    max-width: 80%; /* Limit input width for readability */
+    margin: 0 auto; /* Center the input */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
 }
 /* ANCHORS IN CONTACT */
 
@@ -218,6 +248,31 @@ footer p a {
     color: #d8bfd8;
     text-shadow: 5px 5px #ffc4a8;
   }
+  /* Styling for individual form groups */
+.form-group {
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+    margin-bottom: 15px; /* Space between form fields */
+    width: 100%; /* Take up full width of form container */
+}
+
+/* Center the labels and inputs */
+.form-group label {
+    font-weight: bold;
+    text-align: center; /* Center label text */
+    margin-bottom: 5%;
+    color: #333;
+}
+
+.form-group input {
+    padding: 10%;
+    width: 100%; /* Ensure input takes full width */
+    max-width: 80%; /* Limit input width for readability */
+    margin: 0 auto; /* Center the input */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
 }
 /* MAIN Grid */
 #linear-gradient {
@@ -440,3 +495,40 @@ article > ul > li {
     nav li a {
       padding: 0.1em 0.75em;
     }} */
+
+/* REGISTRATION CSS */
+
+#formReg {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    align-items: center; /* Center elements horizontally */
+    justify-content: center; /* Center elements vertically if needed */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    /* max-width: 600px; */
+    margin: 0 auto; /* Center the form on the page */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Style for the submit button */
+button {
+    padding: 5% 8%;
+    background-color: var(--dark-brown-pink-hex);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: var(--yellow-hex);
+}
+.btn-container{
+    text-align: center;
+}
+
+

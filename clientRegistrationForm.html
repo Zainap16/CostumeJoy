@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Client Registration Form</title>
+    <link rel="stylesheet" href="./style.css">
     <script src="./main.jss" defer ></script>
+    
 </head>
 <body>
+    <header>
+        <div>
+            <a href="./index.html"><img src="./images/logo_cj.png" alt="CostumeJoy" ></a>
+        </div>
+
+    </header>
     <nav>	
         <ul>
             <li><a href="index.html">Home </a></li>
@@ -16,144 +24,163 @@
         </ul>
 </div>
     
-<form action="/submit" method="POST">
+<form action="/submit" method="POST" id="formReg">
     <fieldset>
         <legend>Client Information</legend>
         
-        <!-- Preferred Name -->
+        <div class="form-group">
+            <!-- Preferred Name -->
         <label for="preferredName">Preferred Name:</label>
         <input type="text" id="preferredName" name="preferredName" required>
         <br>
+        </div>
         
-        <!-- Client Full Names as on ID -->
-        <label for="fullNames">Client Full Names as on ID:</label>
-        <input type="text" id="fullNames" name="fullNames" required>
-        <br>
-        
-        <!-- Surname -->
+        <div class="form-group"><!-- Client Full Names as on ID -->
+            <label for="fullNames">Client Full Names as on ID:</label>
+            <input type="text" id="fullNames" name="fullNames" required>
+            <br></div>
+
+        <div class="form-group">
+            <!-- Surname -->
         <label for="surname">Surname:</label>
         <input type="text" id="surname" name="surname" required>
         <br>
-        
-        <!-- ID Number -->
-        <label for="idNumber">ID Number:</label>
-        <input type="text" id="idNumber" name="idNumber" required>
-        <br>
-        
-        <!-- Telephone Work -->
+        </div>
+
+        <div class="form-group"><!-- ID Number -->
+            <label for="idNumber">ID Number:</label>
+            <input type="text" id="idNumber" name="idNumber" required>
+            <br></div>
+
+        <div class="form-group">
+            <!-- Telephone Work -->
         <label for="telWork">Telephone Work:</label>
         <input type="tel" id="telWork" name="telWork" required>
         <br>
+        </div>
         
-        <!-- Cellphone Number -->
+
+        <div class="form-group">
+              <!-- Cellphone Number -->
         <label for="cellphone">Cellphone Number:</label>
         <input type="tel" id="cellphone" name="cellphone" required>
         <br>
-        
-        <!-- E-mail -->
+        </div>
+
+        <div class="form-group">
+            <!-- E-mail -->
         <label for="email">E-mail:</label>
         <input type="email" id="email" name="email" required>
         <br>
-        
-        <!-- Home Address -->
+        </div>
+
+        <div class="form-group">
+            <!-- Home Address -->
         <label for="homeAddress">Home Address:</label>
         <textarea id="homeAddress" name="homeAddress" rows="3" required></textarea>
         <br>
-        
-        <!-- Postal Address -->
+        </div>
+
+        <div class="form-group">
+            <!-- Postal Address -->
         <label for="postalAddress">Postal Address:</label>
         <textarea id="postalAddress" name="postalAddress" rows="3" required></textarea>
         <br>
-        
-        <!-- Checkbox to copy home address to postal address -->
-        <input type="checkbox" id="sameAsHome" onclick="copyAddress()">
-        <label for="sameAsHome">Copy home address to postal address</label>
-        <br>
-        
-        <!-- Where did the user hear about us -->
-        <label for="hearAbout">Where did you hear about us?</label>
-        <select id="hearAbout" name="hearAbout" required>
-            <option value="word_of_mouth">Word of Mouth</option>
-            <option value="internet_search">Internet Search</option>
-            <option value="advertising">Advertising</option>
-        </select>
-        <br>
-        
-        <!-- Name on Credit Card -->
-        <label for="creditCardName">Name on Credit Card:</label>
-        <input type="text" id="creditCardName" name="creditCardName" required>
-        <br>
-        
-        <!-- Credit Card Type -->
-        <label for="creditCardType">Credit Card Type:</label>
-        <select id="creditCardType" name="creditCardType" required>
-            <option value="visa">Visa</option>
-            <option value="mastercard">MasterCard</option>
-            <option value="amex">American Express</option>
-        </select>
-        <br>
-        
-        <!-- Credit Card Number -->
+        </div>
+
+        <div class="form-group"><!-- Checkbox to copy home address to postal address -->
+            <input type="checkbox" id="sameAsHome" onclick="copyAddress()">
+            <label for="sameAsHome">Copy home address to postal address</label>
+            <br>
+            </div>
+
+        <div class="form-group"> <!-- Where did the user hear about us -->
+            <label for="hearAbout">Where did you hear about us?</label>
+            <select id="hearAbout" name="hearAbout" required>
+                <option value="word_of_mouth">Word of Mouth</option>
+                <option value="internet_search">Internet Search</option>
+                <option value="advertising">Advertising</option>
+            </select>
+            <br></div>
+
+        <div class="form-group"><!-- Name on Credit Card -->
+            <label for="creditCardName">Name on Credit Card:</label>
+            <input type="text" id="creditCardName" name="creditCardName" required>
+            <br></div>
+
+        <div class="form-group"><!-- Credit Card Type -->
+            <label for="creditCardType">Credit Card Type:</label>
+            <select id="creditCardType" name="creditCardType" required>
+                <option value="visa">Visa</option>
+                <option value="mastercard">MasterCard</option>
+                <option value="amex">American Express</option>
+            </select>
+            <br></div>
+
+            <div class="form-group">
+                <!-- Credit Card Number -->
         <label for="creditCardNumber">Credit Card Number:</label>
         <input type="text" id="creditCardNumber" name="creditCardNumber" required>
         <br>
-        
-        <!-- Expiration Month and Year -->
-        <label for="expiryMonth">Expiration Month:</label>
-        <select id="expiryMonth" name="expiryMonth" required>
-            <option value="01">January</option>
-            <option value="02">February</option>
-            <option value="03">March</option>
-            <option value="04">April</option>
-            <option value="05">May</option>
-            <option value="06">June</option>
-            <option value="07">July</option>
-            <option value="08">August</option>
-            <option value="09">September</option>
-            <option value="10">October</option>
-            <option value="11">November</option>
-            <option value="12">December</option>
-        </select>
-        <br>
-        
-        <label for="expiryYear">Expiration Year:</label>
-        <select id="expiryYear" name="expiryYear" required>
-            <option value="2024">2024</option>
-            <option value="2025">2025</option>
-            <option value="2026">2026</option>
-            <option value="2027">2027</option>
-            <option value="2028">2028</option>
-            <option value="2029">2029</option>
-        </select>
-        <br>
-        
-        <!-- CVC Number -->
-        <label for="cvcNumber">CVC Number:</label>
-        <input type="text" id="cvcNumber" name="cvcNumber" required>
-        <br>
-        
-        <!-- User Name -->
-        <label for="username">User Name:</label>
-        <input type="text" id="username" name="username" required>
-        <br>
-        
-        <!-- Password -->
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <br>
-        
-        <!-- Confirm Password -->
-        <label for="confirmPassword">Confirm Password:</label>
-        <input type="password" id="confirmPassword" name="confirmPassword" required>
-        <br>
-        
-        <!-- Additional Information -->
-        <label for="additionalInfo">Additional Information:</label>
-        <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
-        <br>
+            </div>
+
+            <div class="form-group"> <!-- Expiration Month and Year -->
+                <label for="expiryMonth">Expiration Month:</label>
+                <select id="expiryMonth" name="expiryMonth" required>
+                    <option value="01">January</option>
+                    <option value="02">February</option>
+                    <option value="03">March</option>
+                    <option value="04">April</option>
+                    <option value="05">May</option>
+                    <option value="06">June</option>
+                    <option value="07">July</option>
+                    <option value="08">August</option>
+                    <option value="09">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+                <br></div>
+
+            <div class="form-group"><label for="expiryYear">Expiration Year:</label>
+                <select id="expiryYear" name="expiryYear" required>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                </select>
+                <br></div>
+
+            <div class="form-group"><!-- CVC Number -->
+                <label for="cvcNumber">CVC Number:</label>
+                <input type="text" id="cvcNumber" name="cvcNumber" required>
+                <br></div>
+
+            <div class="form-group"><!-- User Name -->
+                <label for="username">User Name:</label>
+                <input type="text" id="username" name="username" required>
+                <br></div>
+
+            <div class="form-group"><!-- Password -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br></div>
+
+            <div class="form-group"><!-- Confirm Password -->
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <br></div>
+
+            <div class="form-group"><!-- Additional Information -->
+                <label for="additionalInfo">Additional Information:</label>
+                <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+                <br></div>
         
         <!-- Submit Button -->
-        <button type="submit">Submit</button>
+         <div class="btn-container"><button type="submit" >Submit</button></div>
+        
     </fieldset>
 </form>
 <footer>
