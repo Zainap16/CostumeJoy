@@ -80,7 +80,6 @@ nav > ul {
 nav > ul > li {
   font-size: 1.5em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border-top: 1px solid var(--light-skin-hex);
 }
 
 nav li a {
@@ -213,6 +212,14 @@ footer > p {
     table #trading-hours{
         display: none;
     }
+
+    /* MAIN Grid */
+  #linear-gradient{ 
+    background-image: linear-gradient(#ffc4a8, #bd5943);
+    height: 50%;
+    color: white;
+}
+
 }  
 /* CSS GENERAL TABLET  */
 .tablet-desktop p{
@@ -278,6 +285,14 @@ footer > p {
     
   }
 
+  .products dd {
+    font-size: 1.5em;
+  }
+
+  .round{
+    margin-left: 10%;
+}
+
 }
 
     /* TABLE STYLING */
@@ -318,6 +333,70 @@ footer > p {
          padding-bottom: 2%;
      }
 
+     /* FLEXBOX */
+     .container {
+        clear: both;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-evenly;
+        /* background: rgb(255,149,95);background: linear-gradient(297deg, rgba(255,149,95,1) 21%, rgba(255,149,95,1) 40%, rgba(189,89,67,1) 84%); */
+      }
+
+      /* PROCUTS - MAIN */
+
+      .products{
+        /* background-color: var(--dark-brown-pink-hex); */
+        margin: 2% 2% 2% 2%;
+        padding: 2% 2% 2% 2%;
+        border-radius: 10px;
+        color: var(--dark-brown-pink-hex);     
+      }
+      
+        .products dt {
+          font-weight: bold;
+          font-size: 2em;
+        }
+      
+        .products dd {
+          font-size: 1.5em;
+          
+        }
+
+        .conatiner > .products > img{
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        main > div > article > img{
+            margin-bottom: 5%;
+          }
+          
+          aside p{
+            margin: 2% 2% 2% 2%;
+            padding-top: 3%;
+            color: black;
+            font-weight: bold;
+            
+          }
+          aside{
+            padding-bottom: 5%;
+          }
+          
+          article:nth-child(2){
+            color: black;
+          }
+          
+          article > ul > li{
+           list-style-type: none;
+          }
+
+        
+  
+  
+ 
 /* LARDGE DESKTOP MEDIA */
 /* @media screen and (min-width: 1200px){
   
