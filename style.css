@@ -1,0 +1,151 @@
+/* Reset CSS */
+
+body,
+header,
+h1,
+nav,
+footer,
+main,
+div,
+img,
+ul,
+iframe,
+dl,
+dt,
+dd,
+article,
+figure,
+figcaption,
+aside,
+p{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* 
+bg: #fbebe0
+
+
+yellow hex: #ffea44
+light skin hex - #ffc4a8
+dark pinnk hex : #fa8d74
+dark brown-pink hex: #bd5943
+
+*/
+
+/* CSS VARIABLES */
+:root{
+    --mainbg:#fbebe0; 
+    --yellow-hex: #ffea44;
+    --light-skin-hex: #ffc4a8;
+    --dark-pink-hex : #fa8d74;
+    --dark-brown-pink-hex: #bd5943;
+}
+body{
+    background-color: var(--mainbg);
+}
+
+/* HERO IMAGE RESPONSIVE */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Style rules for header */
+header{
+  top: 0;
+  
+}
+
+/* centers logo */
+header img {
+  margin-right: auto;
+  margin-left: auto;
+  height: 15vw;
+}
+
+/* Style rules for nav */
+nav {
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li {
+  font-size: 1.5em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-top: 1px solid var(--light-skin-hex);
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5em 1em;
+  display: block;
+  font-weight: bold;
+}
+
+nav li:hover {
+  color: #000;
+  background-color: var(--light-skin-hex);
+}
+
+/* MAIN CONTENT STYLE */
+h1, h2, h3, h4{
+    color: var(--dark-brown-pink-hex);
+   text-align: center;
+}
+
+section > div > figure > img{
+    max-width:40% ; 
+    display: block;  
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+
+  section > div > figure > figcaption{
+    text-align: center;
+    margin-top: 2%;
+  }
+
+  figure{
+    margin-top: 7%;
+    margin-bottom: 7%;
+  }
+/* DISABLE RESPONSIVENESS */
+.tablet-desktop {
+    display: none;
+}
+
+.mobile{
+    display: none;
+    background-color: #fde5d6;
+    padding: 2% 2% 2% 2%;
+}
+
+.mobile p{
+    text-align: center;
+}
+ 
+ul li{
+   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .mobile{
+        display: block;
+    }
+
+    .tel-link a {
+        color: black;
+        text-decoration: none;
+        font-size: 1.5em;
+        display: block;
+      }
+   
+  }
