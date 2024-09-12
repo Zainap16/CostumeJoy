@@ -41,6 +41,7 @@ dark brown-pink hex: #bd5943
     --light-skin-hex: #ffc4a8;
     --dark-pink-hex : #fa8d74;
     --dark-brown-pink-hex: #bd5943;
+    --very-dark:#e89c8b;
 }
 body{
     background-color: var(--mainbg);
@@ -71,12 +72,12 @@ nav {
   margin-bottom: 1%;
 }
 
-nav ul {
+nav > ul {
   list-style-type: none;
   text-align: center;
 }
 
-nav li {
+nav > ul > li {
   font-size: 1.5em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-top: 1px solid var(--light-skin-hex);
@@ -101,6 +102,12 @@ h1, h2, h3, h4{
    text-align: center;
 }
 
+.headings{
+    color: var(--dark-brown-pink-hex);
+    text-align: center;
+    font-size: 1.3rem;
+}
+
 section > div > figure > img{
     max-width:40% ; 
     display: block;  
@@ -117,10 +124,6 @@ section > div > figure > img{
     margin-top: 7%;
     margin-bottom: 7%;
   }
-/* DISABLE RESPONSIVENESS */
-.tablet-desktop {
-    display: none;
-}
 
 .mobile{
     display: none;
@@ -136,16 +139,204 @@ ul li{
    text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+.action{
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  
+  .action{
+    color: var(--very-dark);
+    font-size: 1.5rem;
+  }
+
+/* GENERIC FOOTER STYLE */
+footer{
+    
+    background-color:  #fde5d6;;
+}
+
+footer > p {
+    font-size: 1.1em;
+    text-align: center;
+    color: black;
+    padding: 0 ;
+    margin: 0 ;
+  }
+
+  footer p a {
+    text-decoration: none;
+    color: black;
+  }
+
+@media screen and (max-width: 629px) {
     .mobile{
         display: block;
     }
 
-    .tel-link a {
-        color: black;
-        text-decoration: none;
-        font-size: 1.5em;
-        display: block;
-      }
+    .tablet-desktop, #trading-hours {
+        display: none;
+    }
+   .mobile-user{
+    display: block;
+   }
+
+    .mobile-user > ul >li{
+        background-color: var(--mainbg); /* White background */
+    }
    
   }
+/* ANCHORS IN CONTACT */
+
+  .tel-link a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+  }
+
+  /* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px)  and (max-width: 1024px), print {
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop {
+      display: block;
+    }
+  
+    .mobile, .mobile-user {
+      display: none;
+    }
+
+    .map {
+        width: 600px;
+        height: 400px;
+      }
+
+    table #trading-hours{
+        display: none;
+    }
+}  
+/* CSS GENERAL TABLET  */
+.tablet-desktop p{
+    text-align: center;
+}
+
+.tablet-desktop p{
+    text-align: center;
+    padding: 2% 2% 2% 2%;
+}
+
+  #container-map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-skin-hex);
+  }
+  
+  #contact .contact-email-link {
+    color: var(--yellow-hex);
+    text-decoration: none;
+  }
+
+
+
+  @media screen and (min-width: 1025px), print {
+    /* Desktop Viewport: Style rule for header */
+   
+    .mobile, .mobile-user{
+        display: none;
+    }
+
+  header {
+    margin-bottom: 5%;
+   
+  }
+  nav li {
+    border-top: none;
+    display: inline-block;
+    border-right: 2px solid #bd5943;
+    font-size: 1.6em;
+  }
+
+  nav li:last-child {
+    border-right: none;
+  }
+
+  nav li a {
+    padding: 0.1em 0.75em;
+  }
+
+  .container, main, .external-link {
+    font-size: 1.5em;
+  }
+
+  .tablet-desktop h1{
+    margin-top: 2%;
+  }
+
+  iframe  {
+    width: 800px;
+    height: 500px;
+    
+  }
+
+}
+
+    /* TABLE STYLING */
+    #trading-hours{
+        text-align: center;
+        margin-top: 2%;
+     }
+ 
+     table{
+         margin: 0 auto; /* Ensures the table is centered */
+     border-collapse: collapse; /* Removes spacing between cells */
+     width: 100%;  
+     }
+ 
+     th {
+         background-color: var(--dark-brown-pink-hex);
+         color: var(--light-skin-hex);
+         padding: 10px;
+         border: 1px solid black;
+         
+         text-align: center;
+     }
+ 
+     td {
+         padding: 10px;
+         border: 1px solid black;
+         text-align: center;
+     }
+ 
+     tr:nth-child(even) {
+         background-color: var(--mainbg);
+     }
+ 
+     table caption{
+         font-size: larger;
+         font-weight: bold;
+         color: var(--dark-brown-pink-hex);
+         padding-bottom: 2%;
+     }
+
+/* LARDGE DESKTOP MEDIA */
+/* @media screen and (min-width: 1200px){
+  
+
+    header {
+      margin-bottom: 5%;
+     
+    }
+    nav li {
+      border-top: none;
+      display: inline-block;
+      border-right: 2px solid #f398da;
+      font-size: 1.6em;
+    }
+  
+    nav li:last-child {
+      border-right: none;
+    }
+  
+    nav li a {
+      padding: 0.1em 0.75em;
+    }} */
