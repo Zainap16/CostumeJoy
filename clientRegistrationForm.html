@@ -6,9 +6,11 @@
     <title>Client Registration Form</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./main.jss" defer ></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
@@ -25,9 +27,10 @@
             <li><a href="./clientRegistrationForm.html">Registration</a></li>
             <li><a href="./contact.html">Contact Us</a></li>
         </ul>
+    </nav>
 </div>
     
-<form action="/submit" method="POST" id="formReg">
+<form action="/submit" method="POST" id="formReg" class="form-grid">
     <fieldset>
         <legend>Client Information</legend>
         <br>
@@ -90,25 +93,26 @@
         <textarea id="postalAddress" name="postalAddress" rows="3" required></textarea>
         <br>
         </div>
-
-        <div class="form-group"><!-- Checkbox to copy home address to postal address -->
-            <input type="checkbox" id="sameAsHome" onclick="copyAddress()">
-            <label for="sameAsHome">Copy home address to postal address</label>
-            <br>
-            </div>
+        <div class="form-group">
+            <label for="copyAddress" >Copy Postal Address:</label>
+  <select id="copyAddress" name="copyAddress" required>
+    <option value="">Select</option>
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select><br><br>
+        </div>
+          <!-- Postal Address Selection -->
+  
 
         <div class="form-group"> <!-- Where did the user hear about us -->
             <label for="hearAbout">Where did you hear about us?</label>
             <select id="hearAbout" name="hearAbout" required>
+             <optgroup>
                 <option value="word_of_mouth">Word of Mouth</option>
                 <option value="internet_search">Internet Search</option>
                 <option value="advertising">Advertising</option>
+             </optgroup>
             </select>
-            <br></div>
-
-        <div class="form-group"><!-- Name on Credit Card -->
-            <label for="creditCardName">Name on Credit Card:</label>
-            <input type="text" id="creditCardName" name="creditCardName" required>
             <br></div>
 
         <div class="form-group"><!-- Credit Card Type -->
@@ -125,6 +129,15 @@
         <label for="creditCardNumber">Credit Card Number:</label>
         <input type="text" id="creditCardNumber" name="creditCardNumber" required>
         <br>
+            </div>
+            <div class="form-group">
+                 <!-- Valid Learner's License -->
+  <label for="learnersLicense">Valid Learner's License:</label>
+  <select id="learnersLicense" name="learnersLicense" required>
+    <option value="">Select</option>
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select><br><br> 
             </div>
 
             <div class="form-group"> <!-- Expiration Month and Year -->

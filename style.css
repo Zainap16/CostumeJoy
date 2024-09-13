@@ -256,6 +256,21 @@ footer p a {
     padding: 3%;
   }
 
+  form {
+    width: 70%;
+    margin: 0 auto; 
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* three equal columns */
+  gap: 20px; /* space between grid items */
+}
+.btn {
+  grid-column: span 3; /* spans across all three columns */
+}
+
+
 }
 /* MAIN Grid */
 #linear-gradient {
@@ -364,7 +379,6 @@ th {
   color: var(--light-skin-hex);
   padding: 10px;
   border: 1px solid black;
-
   text-align: center;
 }
 
@@ -468,7 +482,7 @@ article > ul > li {
 
 
 /* LARDGE DESKTOP MEDIA */
-/* @media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px){
   
 
     header {
@@ -488,7 +502,26 @@ article > ul > li {
   
     nav li a {
       padding: 0.1em 0.75em;
-    }} */
+    }
+  
+  body{
+    font-size: 2rem;
+  }
+
+  #formReg  {
+    font-size: 2em;
+  }
+  select{
+    font-size: 0.7em;
+  }
+
+  th {
+    background-color: #333;
+    
+  }
+ 
+
+  }
 
 /* REGISTRATION CSS */
 
