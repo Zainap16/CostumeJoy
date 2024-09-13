@@ -248,31 +248,14 @@ footer p a {
     color: #d8bfd8;
     text-shadow: 5px 5px #ffc4a8;
   }
-  /* Styling for individual form groups */
-.form-group {
-    display: flex;
-    flex-direction: column; /* Stack label and input vertically */
-    margin-bottom: 15px; /* Space between form fields */
-    width: 100%; /* Take up full width of form container */
-}
+  /* FORM REGISRATION */
+  fieldset{
+    width: 40vw;
+  }
+  .form-group input {
+    padding: 3%;
+  }
 
-/* Center the labels and inputs */
-.form-group label {
-    font-weight: bold;
-    text-align: center; /* Center label text */
-    margin-bottom: 5%;
-    color: #333;
-}
-
-.form-group input {
-    padding: 10%;
-    width: 100%; /* Ensure input takes full width */
-    max-width: 80%; /* Limit input width for readability */
-    margin: 0 auto; /* Center the input */
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-}
 }
 /* MAIN Grid */
 #linear-gradient {
@@ -351,6 +334,17 @@ footer p a {
   .round {
     margin-left: 10%;
   }
+
+  
+  fieldset{
+    width: 50vw;
+  }
+  .form-group input {
+    padding: 3%;
+  }
+
+
+
 }
 
 /* TABLE STYLING */
@@ -504,7 +498,7 @@ article > ul > li {
     align-items: center; /* Center elements horizontally */
     justify-content: center; /* Center elements vertically if needed */
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #e1ada28e;
     border-radius: 10px;
     /* max-width: 600px; */
     margin: 0 auto; /* Center the form on the page */
@@ -532,3 +526,42 @@ button:hover {
 }
 
 
+    /* Styling for individual form groups */
+    .form-group {
+      display: flex;
+      flex-direction: column; /* Stack label and input vertically */
+      margin-bottom: 15px; /* Space between form fields */
+      width: 100%; /* Take up full width of form container */
+      /* background-color: var(--mainbg); */
+    }
+    
+    /* Center the labels and inputs */
+    .form-group label {
+      font-weight: bold;
+      text-align: center; /* Center label text */
+      margin-bottom: 5%;
+      color: #333;
+    }
+    
+    .form-group input {
+      /* padding: 10%; */
+      width: 100%; /* Ensure input takes full width */
+      max-width: 80%; /* Limit input width for readability */
+      margin: 0 auto; /* Center the input */
+      border: 1px solid #e89c8b;
+      border-radius: 5px;
+      font-size: 16px;
+      
+    }
+
+    form > fieldset > legend{
+      color: #bd5943;
+      font-weight: bolder;
+      text-align: center;
+      font-size: larger;
+
+    }
+
+    fieldset{
+      background: var(--mainbg);
+    }
