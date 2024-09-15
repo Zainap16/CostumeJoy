@@ -17,7 +17,7 @@ article,
 figure,
 figcaption,
 aside,
-p {
+p, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -78,7 +78,7 @@ nav > ul {
 nav > ul > li {
   font-size: 1.5em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border-top:2px solid #e89c8b;
+ 
 }
 nav > ul > li:nth-last-of-type(4) {
     border-top: none;
@@ -505,11 +505,11 @@ article > ul > li {
     }
   
   body{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   #formReg  {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   select{
     font-size: 0.7em;
@@ -598,3 +598,5 @@ button:hover {
     fieldset{
       background: var(--mainbg);
     }
+
+    /* VIDEO STYLE c.	Create a new style rule for the video selector to specify margin */
