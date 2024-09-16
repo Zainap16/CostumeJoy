@@ -492,7 +492,7 @@ article > ul > li {
     nav li {
       border-top: none;
       display: inline-block;
-      border-right: 2px solid #f398da;
+      /* border-right: 2px solid #f398da; */
       font-size: 1.6em;
     }
   
@@ -505,11 +505,12 @@ article > ul > li {
     }
   
   body{
-    font-size: 1.5rem;
+    font-size: 1rem;
+    margin: 5% 5% 5% 5%;
   }
 
   #formReg  {
-    font-size: 1.5em;
+    font-size: 1em;
   }
   select{
     font-size: 0.7em;
@@ -519,6 +520,12 @@ article > ul > li {
     background-color: #333;
     
   }
+
+  .action, .headings, h4{
+    font-size: 2em;
+  }
+
+
  
 
   }
