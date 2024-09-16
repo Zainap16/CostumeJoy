@@ -600,3 +600,16 @@ button:hover {
     }
 
     /* VIDEO STYLE c.	Create a new style rule for the video selector to specify margin */
+
+    .video-container {
+      display: flex;
+      justify-content: center; /* Horizontally centers the video */
+      align-items: center;      /* Vertically centers the video */
+      height: 100vh;            /* Full viewport height */
+      background-color: #f4f4f4; /* Optional background color */
+    }
+    
+    video {
+      max-width: 100%;
+      height: auto;
+    }
